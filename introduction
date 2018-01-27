@@ -1,0 +1,22 @@
+Formas para cargar modulos
+
+AMD (Asynchronous modul definitions), en esta forma de carga de modulos existe la libreria
+require.js.
+Ejm:
+Al cargar el landing de una pagina se carga un solo archivo js, este archivo puede llamar a otros
+archivos js, estos al cargar el primer archivo automaticamente se cargan los otros archivos.
+
+CommonJS (Sistema de módulos de node.js), en comparacion de AMD en esta forma se carga un solo archivo
+donde todos los archivos pasan por un proceso de transpilacion el cual consiste en incluir
+todos los archivos dentro de uno.
+
+¿Por que usar webpack? Por que trae lo mejor de ambas formas de cargar los modulos AMD y CommonJS
+
+Entry Point: Es el módulo principal de donde se parte a importar los demás módulos.
+Puede haber mas de un entry point.
+
+Output: Es el archivo final como resultado de empaquetar o generar el bundle.
+
+Loader: Permite cargar e interpretar todo tipo de archivo por webpack.
+
+Plugin: Extiende la funcionalidad de webpack, por ejemplo comprimir archivos con Uglify.
